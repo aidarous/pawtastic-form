@@ -58,7 +58,12 @@ class App extends React.Component{
           placeholder ="Pet breed"
           value ={this.state.breed}
           />
-          
+          <label>Birthday</label>
+          <input type ="birthday" 
+          placeholder ="MM/DD/YYYY"
+          value ={this.state.birthday}
+          />
+
         </form>
       </div>
     );
