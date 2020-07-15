@@ -22,6 +22,12 @@ onBreedChange = (event) => {
     breed: event.target.value
   })
 }
+birthdayChange = (event) => {
+  this.setState({
+    birthday: event.target.value
+  });
+}
+
 
 
 }
