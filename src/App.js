@@ -4,7 +4,7 @@ import './App.css';
 class App extends React.Component{
   constructor(){
     super();
-    this.sate = {
+    this.state = {
       name: 'Pet name',
       breed: 'Pet breed',
       gender: '',
@@ -12,23 +12,46 @@ class App extends React.Component{
       weight: 0,
     }
   }
-onNameChange = (event) => {
+  onNameChange = (event) => {
+      this.setState({
+        name: event.target.value
+      })
+  }
+  onBreedChange = (event) => {
     this.setState({
-      name: event.target.value
+      breed: event.target.value
     })
-}
-onBreedChange = (event) => {
-  this.setState({
-    breed: event.target.value
-  })
-}
-birthdayChange = (event) => {
-  this.setState({
-    birthday: event.target.value
-  });
-}
+  }
+  birthdayChange = (event) => {
+    this.setState({
+      birthday: event.target.value
+    });
+  }
 
+  handleGender = (event) => {
+    this.setState({
+      gender: event.target.value
+    })
+  }
 
+  handleNeuterSpray = (event) => {
+    
+  }
+  handleWeight = (event) => {
+    this.setState({
+    weight: event.target.value
+    })
+  }
+
+  render(){
+    return(
+      <div>
+      
+
+        </form>
+      </div>
+    );
+  }
 
 }
 export default App;
