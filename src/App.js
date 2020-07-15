@@ -46,7 +46,14 @@ class App extends React.Component{
   render(){
     return(
       <div>
-      
+        <h1>Pawtastic</h1>
+        <form >
+          <label>Name</label>
+          <input type="name" 
+          placeholder="Pet name"
+          value= {this.state.name}
+          />
+          
 
         </form>
       </div>
