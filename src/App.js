@@ -53,8 +53,12 @@ class App extends React.Component{
           placeholder="Pet name"
           value= {this.state.name}
           />
+          <label>Breed</label>
+          <input type ="breed" 
+          placeholder ="Pet breed"
+          value ={this.state.breed}
+          />
           
-
         </form>
       </div>
     );
