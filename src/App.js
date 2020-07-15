@@ -9,9 +9,19 @@ class App extends React.Component{
       breed: 'Pet breed',
       gender: '',
       neutered: null,
-      weight:
+      weight: 0,
     }
   }
+onNameChange = (event) => {
+    this.setState({
+      name: event.target.value
+    })
+}
+onBreedChange = (event) => {
+  this.setState({
+    breed: event.target.value
+  })
+}
 
 
 }
